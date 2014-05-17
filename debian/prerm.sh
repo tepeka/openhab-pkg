@@ -20,6 +20,8 @@ case "$1" in
     remove|deconfigure)
         rm -rf /opt/openhab/.eclipse >/dev/null 2>&1
         rm -rf /opt/openhab/workspace >/dev/null 2>&1
+        rm -rf /opt/openhab/server >/dev/null 2>&1
+        rm -rf /opt/openhab/webapps >/dev/null 2>&1
         unlink /opt/openhab/logs >/dev/null 2>&1
         unlink /opt/openhab/etc >/dev/null 2>&1
         userdel openhab >/dev/null 2>&1
