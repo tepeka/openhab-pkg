@@ -19,7 +19,7 @@ apt-get install openhab
 ## Requirements
 You need the [fpm](https://rubygems.org/gems/fpm) ruby cli tool to build the package by our own.
 
-## Build package
+## Build and install package
 ```
 git clone https://github.com/bullshit/openhab-deb.git
 cd openhab-deb
