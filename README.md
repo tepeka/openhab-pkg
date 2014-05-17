@@ -1,7 +1,8 @@
 openhab deb package
 =======
 
-This package ist hosted on the lxccu repostory.
+This package installs openhab with a init script and debian like configuraiton.
+It is hosted on the lxccu repostory and it was created because of my friend [tepeka](https://github.com/tepeka)
 
 ## How to install
 ```
@@ -16,7 +17,7 @@ apt-get install openhab
 ## Install without repository
 
 ## Requirements
-FPM project from https://rubygems.org/gems/fpm
+You need the [fpm](https://rubygems.org/gems/fpm) ruby cli tool to build the package by our own.
 
 ## Build package
 ```
@@ -45,7 +46,7 @@ insserv openhab
 ## How to start the daemon on port 80
 
 ### Proxy
-You can use nginx as a proxy server with this configuration from https://gist.github.com/jpmens/8027912
+You can use nginx as a proxy server with this configuration from [jpmens](https://gist.github.com/jpmens/8027912) 
 ```
 worker_processes  1;
  
