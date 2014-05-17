@@ -3,7 +3,7 @@ openhab deb package
 
 This package ist hosted on the lxccu repostory.
 
-== How to install
+## How to install
 ```
 # install lxccu repo
 wget -O ./lxccu-repo.deb http://www.lxccu.com/latest-repo.php
@@ -13,23 +13,23 @@ apt-get update
 # install openhab
 apt-get install openhab
 ```
-== Install without repository
+## Install without repository
 
-== Requirements
+## Requirements
 FPM project from https://rubygems.org/gems/fpm
 
-== Build package
+## Build package
 ```
 git clone https://github.com/bullshit/openhab-deb.git
 cd openhab-deb
 bash build.sh
 dpkg -i openhab_*.deb
 ```
-= How to use
+# How to use
 
 The base directory is /opt/openhab. You use the configurations and addons folder as you know. The folder etc is a symlink to /etc/openhab. Logs are stored under /var/log/openhab. The init script starts the process as user openhab.
 
-== Daemon Configuration
+## Daemon Configuration
 ```
 HTTPPORT=8080
 HTTPSPORT=8443
@@ -42,9 +42,9 @@ After installation add the openhab daemon to start on boot
 insserv openhab
 ```
 
-== How to start the daemon on port 80
+## How to start the daemon on port 80
 
-=== Proxy
+### Proxy
 You can use nginx as a proxy server with this configuration from https://gist.github.com/jpmens/8027912
 ```
 worker_processes  1;
@@ -86,7 +86,7 @@ and add a Host Entry into /etc/openhab/jetty.xml like this
 <Set name="Host">127.0.0.1</Set>
 ```
 
-=== Iptables
+### Iptables
 
 or you set iptables rule
 ```
